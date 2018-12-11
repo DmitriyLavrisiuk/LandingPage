@@ -14,15 +14,12 @@
     }
 
     .grid-element {
-        left: 1rem;
-
         &:nth-child(2),
         &:nth-child(7),
         &:nth-child(9),
         &:nth-child(15) {
             position: relative;
             top: 6.875rem;
-            left: -2.5rem;
         }
 
         -moz-transform: rotate(-45deg);
@@ -37,8 +34,6 @@
     }
 }
 
-@include media-breakpoint-down(md) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(xl) {}
+//@include media-breakpoint-down(md) {}
+//@include media-breakpoint-down(lg) {}
+//@include media-breakpoint-down(xl) {}

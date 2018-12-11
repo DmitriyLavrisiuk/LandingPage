@@ -30,19 +30,27 @@ hr {
     letter-spacing: .25rem;
 }
 
+.navigation-is-scroll { background-color: $black_2; }
+
 header {
     padding: 5rem 1rem;
     min-height: 100vh;
     color: $white_1;
-    background: fixed url('../img/1920x1200/background/header/background-header.jpg') center center no-repeat;
+    background: fixed url('../img/1366x768/background/header/background-header.jpg') center center no-repeat;
+    background-size: cover; 
+
     .fas { font-size: 1.5em; }
+    
     h1 {
         font-size: .9em;
         font-weight: 700;
     }
+
     article {
         margin: auto;
+        
         h2 { font-weight: 200 !important; }
+
         p { margin-top: 1rem; }
     }
 }
@@ -55,19 +63,23 @@ header {
 
 .screen {
     overflow: hidden;
+
     h2 {
         font-size: 3.2em;
         font-family: 'Open Sans';
         text-transform: uppercase;
     }
+
     p {
         padding-top: 2rem;
         font-size: .9em;
     }
+
     &.screen-light {
         color: $screen-light-color;
         background-color: $screen-light-bckcolor;
     }
+
     &.screen-dark {
         color: $screen-dark-color;
         background-color: $screen-dark-bckcolor;
@@ -78,7 +90,7 @@ header {
     display: grid;
     position: absolute;
     left: 50%;
-    top:3%;
+    top: 6.5%;
     overflow: hidden;
     grid-gap: .5rem;
     grid-auto-flow: row;
@@ -96,6 +108,7 @@ header {
     display: flex;
     background-color: $white_1;
     text-align: center;
+
     div {
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
@@ -103,10 +116,12 @@ header {
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
+
     span {
         font-size: .6em;
         text-transform: uppercase;
     }
+
     i {
         display: block;
         font-size: 2em;
