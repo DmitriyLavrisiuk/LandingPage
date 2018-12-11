@@ -1,0 +1,44 @@
+@include media-breakpoint-down(sm) {
+    .grid-container {
+        margin-top: 2.5rem !important;
+        overflow: visible;
+        position: static;
+        grid-gap: 4.4rem 0;
+        grid-template-columns: repeat(2, 9.375rem);
+        grid-template-rows: repeat(4, 9.375rem);
+        -moz-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    .grid-element {
+        left: 1rem;
+
+        &:nth-child(2),
+        &:nth-child(7),
+        &:nth-child(9),
+        &:nth-child(15) {
+            position: relative;
+            top: 6.875rem;
+            left: -2.5rem;
+        }
+
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+
+        &.invisible {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(xl) {}
