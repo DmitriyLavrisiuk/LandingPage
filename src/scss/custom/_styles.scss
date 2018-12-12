@@ -30,7 +30,12 @@ hr {
     letter-spacing: .25rem;
 }
 
-.navigation-is-scroll { background-color: $black_2; }
+.navigation-is-scroll {
+    div { justify-content: center !important; }
+
+    background-color: $white_1;
+    color: $black_2;
+}
 
 header {
     padding: 5rem 1rem;
@@ -55,15 +60,10 @@ header {
     }
 }
 
-// FOR ALL SCREEN
-.screen-padding-10 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
 .screen {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     overflow: hidden;
-
     h2 {
         font-size: 3.2em;
         font-family: 'Open Sans';
@@ -75,15 +75,28 @@ header {
         font-size: .9em;
     }
 
+    &.screen-white {
+        color: $screen-white-color;
+        border-color: $screen-white-color;
+        background-color: $screen-white-bckcolor;
+    }
+
     &.screen-light {
         color: $screen-light-color;
+        border-color: $screen-light-color;
         background-color: $screen-light-bckcolor;
     }
 
     &.screen-dark {
         color: $screen-dark-color;
+        border-color: $screen-dark-color;
         background-color: $screen-dark-bckcolor;
     }
+}
+
+.screen-padding-10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .grid-container {
@@ -131,6 +144,8 @@ header {
 
 
 // SCREEN NUMBER 1
-.screen-1 {
-    position: relative;
-}
+.screen-1 { position: relative; }
+
+// SCREEN NUMBER 2
+
+// SCREEN NUMBER 3
