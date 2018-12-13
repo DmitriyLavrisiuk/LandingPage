@@ -1,4 +1,5 @@
 @import "fonts";
+@import "colors";
 
 body {
     color: $black_1;
@@ -9,14 +10,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a:hover, a:active, a:visited {
+a, a:hover, a:active, a:visited {
     text-decoration: none;
     color: inherit;
-}
-
-hr {
-    margin: 2rem 0;
-    width: 1.5rem;
 }
 
 .outline-link {
@@ -25,7 +21,7 @@ hr {
     font-size: .8em;
     border: .1rem solid $white_1;
     color: $white_1;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .25rem;
 }
@@ -37,14 +33,22 @@ hr {
     color: $black_2;
 }
 
+.decoration-line:after {
+    content: "";
+    display: block;
+    border-top: 1px solid;
+    width: 1.5rem;
+    margin: 2rem 0;
+}
+
 header {
     padding: 5rem 1rem;
     min-height: 100vh;
     color: $white_1;
-    background: fixed url('../img/1366x768/background/header/background-header.jpg') center center no-repeat;
-    background-size: cover; 
+    background: scroll center center no-repeat;
+    background-size: cover;
 
-    .fas { font-size: 1.5em; }
+    a.navbar-brand { font-size: 2.5em; }
     
     h1 {
         font-size: .9em;
@@ -70,10 +74,7 @@ header {
         text-transform: uppercase;
     }
 
-    p {
-        padding-top: 2rem;
-        font-size: .9em;
-    }
+    p { font-size: .9em; }
 
     &.screen-white {
         color: $screen-white-color;
@@ -149,3 +150,20 @@ header {
 // SCREEN NUMBER 2
 
 // SCREEN NUMBER 3
+.screen-3 {
+
+    .carousel-inner {
+        i { font-size: 12rem; }
+    }
+    .carousel-indicators {
+        position: static;
+        li {
+            font-size: 1.2rem;
+            background-color: rgba(0,0,0,0);
+            color: $white_2;
+            text-indent: 0%;
+            
+            &.active { color: $white_1; }
+        }
+    }
+}

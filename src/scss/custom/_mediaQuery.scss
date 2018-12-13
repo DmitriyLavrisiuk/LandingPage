@@ -1,4 +1,10 @@
 @include media-breakpoint-down(sm) {
+
+    .decoration-line:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .grid-container {
         margin-top: 2.5rem !important;
         overflow: visible;
@@ -30,6 +36,16 @@
 
         &.invisible {
             display: none;
+        }
+    }
+
+    .screen-3 {
+        .carousel {
+            margin-top: 2rem;
+        }
+        .carousel-indicators {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
         }
     }
 }
