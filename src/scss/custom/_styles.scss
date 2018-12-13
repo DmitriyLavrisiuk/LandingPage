@@ -5,14 +5,28 @@ body {
     color: $black_1;
     font-size: 1em;
     font-family: Raleway, Roboto, Tahoma, Verdana, sans-serif;
-    .row { margin: 0 !important; }
+
+    .row {
+        margin: 0 !important;
+    }
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
 
-a, a:hover, a:active, a:visited {
+a,
+a:hover,
+a:active,
+a:visited {
     text-decoration: none;
     color: inherit;
+    text-transform: uppercase;
 }
 
 .outline-link {
@@ -22,12 +36,13 @@ a, a:hover, a:active, a:visited {
     border: .1rem solid $white_1;
     color: $white_1;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: .25rem;
 }
 
 .navigation-is-scroll {
-    div { justify-content: center !important; }
+    div {
+        justify-content: center !important;
+    }
 
     background-color: $white_1;
     color: $black_2;
@@ -48,8 +63,10 @@ header {
     background: scroll center center no-repeat;
     background-size: cover;
 
-    a.navbar-brand { font-size: 2.5em; }
-    
+    a.navbar-brand {
+        font-size: 2.5em;
+    }
+
     h1 {
         font-size: .9em;
         font-weight: 700;
@@ -57,10 +74,14 @@ header {
 
     article {
         margin: auto;
-        
-        h2 { font-weight: 200 !important; }
 
-        p { margin-top: 1rem; }
+        h2 {
+            font-weight: 200 !important;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -68,13 +89,17 @@ header {
     padding-top: 5rem;
     padding-bottom: 5rem;
     overflow: hidden;
+
     h2 {
         font-size: 3.2em;
         font-family: 'Open Sans';
         text-transform: uppercase;
     }
 
-    p { font-size: .9em; }
+    p {
+        font-family: 'Open Sans';
+        font-size: .9em;
+    }
 
     &.screen-white {
         color: $screen-white-color;
@@ -145,7 +170,9 @@ header {
 
 
 // SCREEN NUMBER 1
-.screen-1 { position: relative; }
+.screen-1 {
+    position: relative;
+}
 
 // SCREEN NUMBER 2
 
@@ -153,17 +180,68 @@ header {
 .screen-3 {
 
     .carousel-inner {
-        i { font-size: 12rem; }
+        i {
+            font-size: 12rem;
+        }
     }
+
     .carousel-indicators {
         position: static;
+
         li {
             font-size: 1.2rem;
-            background-color: rgba(0,0,0,0);
+            background-color: rgba(0, 0, 0, 0);
             color: $white_2;
             text-indent: 0%;
-            
-            &.active { color: $white_1; }
+
+            &.active {
+                color: $white_1;
+            }
+        }
+    }
+}
+
+// SCREEN NUMBER 4
+.screen-4 {
+    table {
+        font-family: 'Roboto';
+        margin-top: 3rem;
+
+        h5 {
+            color: $black_1;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        P {
+            color: $silver_1;
+        }
+
+        td, th { padding: 1.5rem; }
+
+        th {
+            text-transform: uppercase;
+            color: $silver_0;
+            font-weight: 400;
+        }
+
+
+        tr {
+            border-bottom: 1px solid $silver_0;
+
+            td:first-child {
+                width: 56%;
+            }
+
+            td:nth-child(2) {
+                width: 22%;
+            }
+
+            td:nth-child(3) {
+                width: 22%;
+                text-transform: uppercase;
+            }
         }
     }
 }
