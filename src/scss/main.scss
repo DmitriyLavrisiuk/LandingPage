@@ -16,7 +16,9 @@
 // @import "~bootstrap/scss/grid";
 
 // Custom style
-@import "./custom/colors";
+
 @import "./custom/styles";
+@import "./custom/animation";
 @import "./custom/mediaQuery";
+@import "./custom/mediaImage";
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");

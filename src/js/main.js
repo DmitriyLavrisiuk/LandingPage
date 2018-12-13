@@ -1,9 +1,9 @@
 import 'bootstrap';
-import showMsg from './helloWorld';
-
+import handlerScrollingNavigation from './handlerScrollingNavigation';
+ 
 $(document).ready(
     function () {
-        showMsg();
+        handlerScrollingNavigation();
     }
 );
  
