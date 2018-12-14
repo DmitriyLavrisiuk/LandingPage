@@ -1,259 +1,70 @@
 @import "fonts";
 @import "colors";
 
-body {
-    color: $black_1;
-    font-size: 1em;
-    font-family: Raleway, Roboto, Tahoma, Verdana, sans-serif;
+//==================================================//
+//============   STYLE FOR ALL WEBSITE   ===========//
+//==================================================//
 
-    .row {
-        margin: 0 !important;
-    }
+body {
+    color: $white;
+    font-size: 1em;
+    font-family: 'Open sans', Roboto, Verdana, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
+.row {
+    margin: 0 !important;
+}
+
+.vh-100 {
+    height: 100vh;
 }
 
 a,
-a:hover,
 a:active,
+a:hover,
 a:visited {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-.outline-link {
-    display: inline-block;
-    padding: 1.3rem 2.6rem;
-    font-size: .8em;
-    border: .1rem solid $white_1;
-    color: $white_1;
-    font-weight: bold;
-    letter-spacing: .25rem;
+.navbar-brand {
+    font-size: 2.5rem
 }
 
-.navigation-is-scroll {
-    div {
-        justify-content: center !important;
-    }
+//==================================================//
+//============ STYLE ON BEM METHODOLOGY ============//
+//==================================================//
 
-    background-color: $white_1;
-    color: $black_2;
-}
-
-.decoration-line:after {
-    content: "";
-    display: block;
-    border-top: 1px solid;
-    width: 1.5rem;
-    margin: 2rem 0;
-}
-
-header {
-    padding: 5rem 1rem;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    color: $white_1;
-
-    a.navbar-brand {
-        font-size: 2.5em;
-    }
-
-    h1 {
-        font-size: .9em;
-        font-weight: 700;
-    }
-
-    article {
-        margin: auto;
-
-        h2 {
-            font-weight: 200 !important;
-        }
-
-        p {
-            margin-top: 1rem;
-        }
-    }
-}
-
-.screen {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    overflow: hidden;
-
-    h2 {
-        font-size: 3.2em;
-        font-family: 'Open Sans';
-        text-transform: uppercase;
-    }
-
-    p {
-        font-family: 'Open Sans';
-        font-size: .9em;
-    }
-
-    &.screen-white {
-        color: $screen-white-color;
-        border-color: $screen-white-color;
-        background-color: $screen-white-bckcolor;
-    }
-
-    &.screen-light {
-        color: $screen-light-color;
-        border-color: $screen-light-color;
-        background-color: $screen-light-bckcolor;
-    }
-
-    &.screen-dark {
-        color: $screen-dark-color;
-        border-color: $screen-dark-color;
-        background-color: $screen-dark-bckcolor;
-    }
-}
-
-.screen-padding-10 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-.grid-container {
-    display: grid;
-    position: absolute;
-    left: 50%;
-    top: 6.5%;
-    overflow: hidden;
-    grid-gap: .5rem;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(5, 9.375rem);
-    grid-template-rows: repeat(3, 9.375rem);
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.grid-element {
-    font-family: 'Open sans';
-    display: flex;
-    background-color: $white_1;
-    text-align: center;
-
-    div {
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    span {
-        font-size: .6em;
-        text-transform: uppercase;
-    }
-
-    i {
-        display: block;
-        font-size: 2em;
-        color: $red;
-    }
-}
-
-
-// SCREEN NUMBER 1
-.screen-1 {
-    position: relative;
-}
-
-// SCREEN NUMBER 2
-
-// SCREEN NUMBER 3
-.screen-3 {
-
-    .carousel-inner {
-        i {
-            font-size: 12rem;
-        }
-    }
-
-    .carousel-indicators {
-        position: static;
-
-        li {
-            font-size: 1.2rem;
-            background-color: rgba(0, 0, 0, 0);
-            color: $white_2;
-            text-indent: 0%;
-
-            &.active {
-                color: $white_1;
-            }
-        }
-    }
-}
-
-// SCREEN NUMBER 4
-.screen-4 {
-    table {
-        font-family: 'Roboto';
-        margin-top: 3rem;
-
-        h5 {
-            color: $black_1;
-            font-weight: 300;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-        }
-
-        P {
-            color: $silver_1;
-        }
-
-        td,
-        th {
-            padding: 1.5rem;
-        }
-
-        th {
-            text-transform: uppercase;
-            color: $silver_0;
-            font-weight: 400;
-        }
-
-        tr {
-            border-bottom: 1px solid $silver_0;
-
-            &.background-image {
-                background: fixed url('../img/1366x768/background/header/background-header.jpg') center center no-repeat;
+// Set style for screen: background-image | background-color | color
+.containerScreen {
+    &__item {
+        &-background {
+            &-image {
+                background: fixed url('../img/1366x768/background/background-mounthains.jpg') center center no-repeat;
                 background-size: cover;
-                color: $white_1 !important;
-                h5, p {
-                    color: $white_1;                
+            }
+
+            &-color {
+                &-transparent {
+                    background-color: transparent;
+                    color: $white;
                 }
-            }
 
-            td:first-child {
-                width: 56%;
-            }
+                &-white {
+                    background-color: $white;
+                    color: $black;
+                }
 
-            td:nth-child(2) {
-                width: 22%;
-            }
+                &-gray_1 {
+                    background-color: $gray-1;
+                    color: $gray-2;
+                }
 
-            td:nth-child(3) {
-                width: 22%;
-                text-transform: uppercase;
+                &-gray_2 {
+                    background-color: $gray-2;
+                    color: $white;
+                }
             }
         }
     }
