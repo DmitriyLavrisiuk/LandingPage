@@ -1,0 +1,37 @@
+//==================================================//
+//============ STYLE ON BEM METHODOLOGY ============//
+//==================================================//
+
+// Set style for screen: background-image | background-color | color
+.modulePage {
+    &__item {
+        &_background {
+            &-image {
+                background: fixed url('../img/1366x768/background/background-mounthains.jpg') center center no-repeat;
+                background-size: cover;
+            }
+
+            &-color {
+                &-transparent {
+                    background-color: transparent;
+                    color: $white;
+                }
+
+                &-white {
+                    background-color: $white;
+                    color: $gray-2;
+                }
+
+                &-gray1 {
+                    background-color: $gray-1;
+                    color: $gray-2;
+                }
+
+                &-gray2 {
+                    background-color: $gray-2;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

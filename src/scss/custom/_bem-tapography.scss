@@ -1,0 +1,49 @@
+//==================================================//
+//============ STYLE ON BEM METHODOLOGY ============//
+//==================================================//
+
+// Set style for tapography: title |  |  | 
+.moduleTapography {
+    &__item {
+        &_title {
+            &-1 {
+                font-size: 3.4em;
+                padding-bottom: 1rem;
+                font-weight: 200;
+            }
+
+            &-2 {
+                font-size: 3.4em;
+                padding-bottom: 1rem;
+                font-weight: 800;
+            }
+        }
+
+        &_subtext {
+            font-weight: 300;
+        }
+
+        &_after {
+            &-line {
+                &-1,
+                &-2 {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 1.5rem;
+                        border-bottom: 1px solid currentColor;
+                    }
+                }
+
+                &-1::after {
+                    margin: 2rem 0;
+                }
+
+                &-2::after {
+                    margin: 2rem 0 3rem;
+                }
+            }
+        }
+    }
+}
