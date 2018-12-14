@@ -22,16 +22,28 @@
                     color: $gray-2;
                 }
 
-                &-gray1 {
-                    background-color: $gray-1;
-                    color: $gray-2;
-                }
+                &-gray {
+                    &-1 {
+                        background-color: $gray-1;
+                        color: $gray-2;
+                    }
 
-                &-gray2 {
-                    background-color: $gray-2;
-                    color: $white;
+                    &-2 {
+                        background-color: $gray-2;
+                        color: $white;
+                    }
                 }
             }
+        }
+
+        &_py-5 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        &_py-10 {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
         }
     }
 }
