@@ -46,11 +46,16 @@
                     margin: 1rem 0 2rem;
                 }
 
+                &-4::after {
+                    margin: 1rem 0 3rem;
+                }
+
 
                 &-0,
                 &-1,
                 &-2,
-                &-3 {
+                &-3,
+                &-4 {
                     &::after {
                         content: "";
                         position: relative;
