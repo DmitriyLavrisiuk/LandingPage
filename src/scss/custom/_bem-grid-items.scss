@@ -1,0 +1,83 @@
+//==================================================//
+//============ STYLE ON BEM METHODOLOGY ============//
+//==================================================//
+
+// Set style for grid items
+.moduleGrid {
+    display: grid;
+    position: absolute;
+    left: 50%;
+    top: 6.5%;
+    overflow: hidden;
+    grid-gap: .5rem;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(5, 9.375rem);
+    grid-template-rows: repeat(3, 9.375rem);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition-property: all;
+    transition-duration: 300ms;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 2.5rem !important;
+        overflow: visible;
+        position: static;
+        grid-gap: 4.4rem 0;
+        grid-template-columns: repeat(2, 9.375rem);
+        grid-template-rows: repeat(4, 9.375rem);
+        -moz-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    &__item {
+        display: flex;
+        background-color: $white;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+
+            &:nth-child(2),
+            &:nth-child(7),
+            &:nth-child(9),
+            &:nth-child(15) {
+                position: relative;
+                top: 6.875rem;
+            }
+
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+
+            &.invisible {
+                display: none;
+            }
+        }
+
+        &-wrapper {
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        &-subtext {
+            font-size: .6em;
+            text-transform: uppercase;
+        }
+
+        &-icon {
+            display: block;
+            font-size: 2em;
+            color: rgb(255, 0, 0);
+        }
+    }
+}

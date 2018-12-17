@@ -1,0 +1,108 @@
+//==================================================//
+//============ STYLE ON BEM METHODOLOGY ============//
+//==================================================//
+
+// Set style for tapography: title | paragpaph | subtext | link
+.moduleTapography {
+    &__item {
+        &_title {
+            &-1 {
+                margin-bottom: 1rem;
+                font-size: 3.4em;
+                font-weight: 300;
+            }
+
+            &-2 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                font-size: 3.4em;
+                font-weight: 800;
+            }
+        }
+
+        &_subtext {
+            font-weight: 300;
+
+            &-medium {
+                font-weight: 300;
+            }
+        }
+
+        &_after {
+            &-line {
+                &-0::after {
+                    margin-top: 1rem;
+                }
+
+                &-1::after {
+                    margin: 2rem 0;
+                }
+
+                &-2::after {
+                    margin: 2rem 0 3rem;
+                }
+
+                &-3::after,
+                &-5::after {
+                    margin: 1rem 0 2rem;
+                }
+
+                &-4::after {
+                    margin: 1rem 0 3rem;
+                }
+
+                &-0,
+                &-1,
+                &-2,
+                &-3,
+                &-4,
+                &-5 {
+                    &::after {
+                        content: "";
+                        position: relative;
+                        display: block;
+                        width: 1.5rem;
+                        border-bottom: 1px solid currentColor;
+
+                        @include media-breakpoint-down(sm) {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        &::before {
+                            content: "Meet the entire team";
+                            display: block;
+                            font-size: 0.2em;
+                            position: relative;
+                        }
+                    }
+                }
+
+                &-5 {
+                    &::before {
+                        content: "Meet the entire team";
+                        display: block;
+                        font-size: 0.2em;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &_link {
+            display: inline-block;
+            padding: 1.3rem 2.6rem;
+            letter-spacing: .15rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            border: 2px solid currentColor;
+            transition-property: all;
+            transition-duration: 300ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $white-transparent;
+            }
+        }
+    }
+}

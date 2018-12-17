@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+// normalize.css
+@import "~normalize.css/normalize.css";
+
+// FontAwesome
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
 // Full pack Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
@@ -16,9 +22,7 @@
 // @import "~bootstrap/scss/grid";
 
 // Custom style
-
 @import "./custom/styles";
-@import "./custom/animation";
-@import "./custom/mediaQuery";
-@import "./custom/mediaImage";
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import "./custom/bem-background";
+@import "./custom/bem-tapography";
+@import "./custom/bem-grid-items";
