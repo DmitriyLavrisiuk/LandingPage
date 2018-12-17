@@ -42,7 +42,8 @@
                     margin: 2rem 0 3rem;
                 }
 
-                &-3::after {
+                &-3::after,
+                &-5::after {
                     margin: 1rem 0 2rem;
                 }
 
@@ -50,12 +51,12 @@
                     margin: 1rem 0 3rem;
                 }
 
-
                 &-0,
                 &-1,
                 &-2,
                 &-3,
-                &-4 {
+                &-4,
+                &-5 {
                     &::after {
                         content: "";
                         position: relative;
@@ -67,6 +68,22 @@
                             margin-left: auto;
                             margin-right: auto;
                         }
+
+                        &::before {
+                            content: "Meet the entire team";
+                            display: block;
+                            font-size: 0.2em;
+                            position: relative;
+                        }
+                    }
+                }
+
+                &-5 {
+                    &::before {
+                        content: "Meet the entire team";
+                        display: block;
+                        font-size: 0.2em;
+                        position: relative;
                     }
                 }
             }
