@@ -20,6 +20,8 @@
                 &-white {
                     background-color: $white;
                     color: $gray-2;
+                    transition-property: all;
+                    transition-duration: 300ms;
                 }
 
                 &-red {

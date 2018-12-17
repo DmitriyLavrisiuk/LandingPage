@@ -96,6 +96,13 @@
             font-weight: 400;
             text-transform: uppercase;
             border: 2px solid currentColor;
+            transition-property: all;
+            transition-duration: 300ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $white-transparent;
+            }
         }
     }
 }
