@@ -22,6 +22,11 @@
                     color: $gray-2;
                 }
 
+                &-red {
+                    background-color: $red;
+                    color: $white;
+                }
+
                 &-gray {
                     &-1 {
                         background-color: $gray-1;
